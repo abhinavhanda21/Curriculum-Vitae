@@ -1,0 +1,191 @@
+              
+                %% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10.1pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75, top=.6in, bottom=.3in, right=.7in, left=.7in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\renewcommand*{\httplink}[2][]{%
+  \ifthenelse{\equal{#1}{}}%
+    {\href{#2}{#2}}%
+    {\href{#2}{#1}}}
+% personal data
+\name{Abhinav}{Handa}
+%\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{\centerline{
+\#3841-B, Street \#2, Durgapuri, Haibowal Kalan, Ludhiana - 141001, Punjab, India
+}}
+\phone[mobile]{+91 788 873 5608}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{abhihanda23@gmail.com}                               % optional, remove / comment the line if not wanted
+\social [github][https://github.com/abhinavhanda21]{github.com/abhinavhanda21}
+\homepage {https://abhinavhanda.wordpress.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[63pt][0.3pt]{picture}                       % optional, remove / comment the line if not wanted; '63pt' is the height the picture must be resized to, 0.3pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-30pt}
+\section{Executive Summary}
+
+\vspace{3pt}
+
+\textit{\small{I enjoy both design and development. Being an IT engineer with skill in both these domains, I keep the balance between form and function and pay special attention to technical aspects as well as UI/UX and typography of every project.}}
+
+\section{Projects}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{\cventry{2017}{\href{https://github.com/abhinavhanda21/OpenStreetMap}{https://github.com/abhinavhanda21/OpenStreetMap}}{OpenStreetMap}{Open Source project}{}{\vspace{3pt} A specially designed map of my college to helps freshers. \href{https://lab.gdy.club/#map=19/8444713.27/3614567.83/0}{https://lab.gdy.club/#map=19/8444713.27/3614567.83/0}}}
+
+\vspace{3pt}
+
+\item{\cventry{2017}{\href{https://github.com/abhinavhanda21/Books4you}{https://github.com/abhinavhanda21/Books4you}}{Books4you}{Android based project}{}{\vspace{3pt} A android app which is aimed at for selling and buy-
+ing books. It’s not a simple application for shopping books, its a student app where students
+can sale out there read books to other freshers with books images attached for Users to check
+with the condition of the book before buying.
+}}
+
+
+\end{itemize}
+
+\section{Experience}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+%\item{\cventry{2014--2018}{Guru Nanak Dev Engineering College}{Linux Adminstrations}{78.72\%}{\textit{Punjab, India}}{}}
+
+\item \textbf{Linux Administration}\newline
+I have written shell scripts to perform system admin tasks like creating and deleting accounts of the user.
+I set up firewall, install, remove, update packages and manages file system permissions for user and groups.
+I have made a number of personalized maps using OpenStreetMap.
+
+\vspace{3pt}
+
+\item \textbf{Website configuration and maintenance}\newline
+Website set on server, configured zone file and SSL certificate. Now, regularly maintaining the websites.
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{\cventry{2014--2018}{Guru Nanak Dev Engineering College}{Bachelor's Degree in Information Technology}{67\%}{\textit{Punjab, India}}{}}
+
+\item{\cventry{2014}{D.A.V. Public School}{Higher Secondary Examination}{72\%}{\textit{Punjab, India}}{}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2012}{D.A.V. Public School}{Matriculation}{86.07\%}{\textit{Punjab, India}}{}}
+
+\end{itemize}
+
+\section{QUALIFYING EXAMINATION}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item Graduate Record Examination (GRE) as taken on 20th October, 2017:
+
+Quantitative aptitude-156/170 Verbal Reasoning-142/170 Total-298/340 AWA-3.0/6 
+
+\item  TOEFL as taken on 20th November, 2017:
+
+Reading-25 Writing-21 Listening-23 Speaking-23 Total-92
+
+
+\end{itemize}
+
+\section{Achievements}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item One of the core developers of GreatDevelopers Group. \href{https://github.com/orgs/GreatDevelopers/people}{https://github.com/GreatDevelopers}
+\item Won third prize at inter-zonal IKGPTU cultural comepition in mime(2015). 
+\item Won second prize at central-zonal IKGPTU cultural comepition in mime(2015).
+\item Completed introductory Scuba dive with Infinity Scuba,Andaman & Nicobar island.(2016).
+\item Participated in Poster making contest in commemoration of the World day for Organ donation and Transplantation(2010).
+\item Participated in Red-cross soceity painting competion(2010).
+\item Won award of Honor for Peace poster competion hosted by LIONS Internation(2009).
+
+
+\end{itemize}
+
+\section{Skillset}
+
+\vspace{3pt}
+ 
+\begin{itemize}
+
+\item \textbf{Technologies I worked in:} Python, Android, shell scripting, MySQL, WordPress, LaTeX, Javascript, Bootstrap, HTML, CSS.
+
+\item \textbf{Tools:} vim editor, git, Photoshop.
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
